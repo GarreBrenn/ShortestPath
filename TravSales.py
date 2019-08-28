@@ -27,6 +27,8 @@ f = open("final_flights35.txt")
 
 line = f.readlines()[1]
 linee = line.split()
+
+
 cityobjs.append(node(linee[0]))
 citynames.append(cityobjs[0].getname())
 cityobjs[0].addcity([linee[1], linee[2]])

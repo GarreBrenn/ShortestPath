@@ -1,0 +1,154 @@
+Use the dec2018flights csv file (https://www.transtats.bts.gov/ontime/5PctCancels.aspx)
+to find all the airports (of major cities) every individual airport departs to
+	Ex) SAC -> CHS, SEA, LAX, DAL, ...
+
+List of Major Cities Airports:
+Alabama (AL) - Montgomery	MGM
+Alaska (AK) - Juneau		ANC
+Arizona (AZ) - Phoenix		PHX
+Arkansas (AR) - Little Rock	LIT
+California (CA) - Sacramento	SMF
+Colorado (CO) - Denver		DEN
+Connecticut (CT) - Hartford	BDL
+Delaware (DE) - Wilmington	ILG	
+Florida (FL) - Orlando		MCO	
+Georgia (GA) - Atlanta		ATL
+Hawaii (HI) - Honolulu		HNL
+Idaho (ID) - Boise		BOI
+Illinois (IL) - ChicagoO'Hare	ORD	
+Indiana (IN) - Indianapolis	IND
+Iowa (IA) - Des Moines		DSN
+Kansas (KS) - Kansas City	MCI	
+Kentucky (KY) - Louisville	SDF
+Louisiana (LA) - New Orleans	MSY
+Maine (ME) - Augusta		AUG
+Maryland (MD) - Baltimore	BWI
+Massachusetts (MA) - Boston	BOS
+Michigan (MI) - Detroit		DTW
+Minnesota (MN) - St. Paul	MSP
+Mississippi (MS) - Jackson	JAN
+Missouri (MO) - St Louis	STL
+Montana (MT) - Billings		BIL
+Nebraska (NE) - Lincoln		LNK
+Nevada (NV) - Las Vegas		LAS
+New Hampshire (NH) - Manchester	MHT
+New Jersey (NJ) - Newark	EWR
+New Mexico (NM) - Albuquerque	ABQ
+New York (NY) - New York	JFK
+North Carolina (NC) - Charlotte	CLT
+North Dakota (ND) - Bismarck	BIS
+Ohio (OH) - Columbus		CMH
+Oklahoma (OK) - Oklahoma City	OKC
+Oregon (OR) - Portland		PDX
+Pennsylvania(PA) - Philadelphia	PHL
+Rhode Island (RI) - Providence	PVD
+South Carolina(SC) - Charleston CHS
+South Dakota (SD) - Pierre	PIR
+Tennessee (TN) - Nashville	BNA
+Texas (TX) - Dallas		DFW	
+Utah (UT) - Salt Lake City	SLC
+Vermont (VT) - Montpelier	MPV
+Virginia (VA) - Richmond	RIC
+Washington (WA) - Tacoma	SEA
+West Virginia (WV) - Charleston	CRW
+Wisconsin (WI) - Madison	MSN
+Wyoming (WY) - Cheyenne		CYS
+
+1) delete all cities that are not in the above list from the csv
+2) combine duplicates in "origin" column
+
+
+model these departures on a map of the US:
+https://www.mapcustomizer.com/#
+
+Bulk Entry:
+4445 Selma Hwy, Montgomery, AL 36108 {Alabama}
+5000 W International Airport Rd, Anchorage, AK 99502 {Alaska}
+3400 E Sky Harbor Blvd, Phoenix, AZ 85034 {Arizona}
+1 Airport Rd, Little Rock, AR 72202 {Arkansas}
+6900 Airport Blvd, Sacramento, CA 95837 {California}
+8500 Peña Blvd, Denver, CO 80249 {Colorado}
+Schoephoester Rd, Windsor Locks, CT 06096 {Connecticut}
+151 N Dupont Hwy # 11, New Castle, DE 19720 {Delaware}
+1 Jeff Fuqua Blvd, Orlando, FL 32827 {Florida}
+6000 N Terminal Pkwy, Atlanta, GA 30320 {Georgia}
+300 Rodgers Blvd, Honolulu, HI 96819 {Hawaii}
+3201 W Airport Way #1000, Boise, ID 83705 {Idaho}
+10000 W O'Hare Ave, Chicago, IL 60666 {Illinois}
+7800 Col. H. Weir Cook Memorial Dr, Indianapolis, IN 46241 {Indiana}
+5800 Fleur Dr, Des Moines, IA 50321 {Iowa}
+Kansas City, MO 64153 {Kansas}
+600 Terminal Dr, Louisville, KY 40209 {Kentucky}
+900 Airline Dr, Kenner, LA 70062 {Louisiana}
+75 Airport Rd, Augusta, ME 04330 {Maine}
+Terminal Rd, Baltimore, MD 21240 {Maryland}
+1 Harborside Dr, Boston, MA 02128 {Massachusetts}
+Detroit, MI 48242 {Michigan}
+4300 Glumack Drive St. Paul, MN 55111 {Minnesota}
+100 International Dr, Jackson, MS 39208 {Mississippi}
+10701 Lambert International Blvd, St. Louis, MO 63145 {Missouri}
+1901 Terminal Cir, Billings, MT 59105 {Montana}
+2400 W Adams St, Lincoln, NE 68524 {Nebraska}
+5757 Wayne Newton Blvd, Las Vegas, NV 89119 {Nevada}
+1 Airport Rd, Manchester, NH 03103 {New Hampshire}
+3 Brewster Rd, Newark, NJ 07114 {New Jersey}
+2200 Sunport Blvd, Albuquerque, NM 87106 {New Mexico}
+Queens, NY 11430 {New York}
+5501 Josh Birmingham Pkwy, Charlotte, NC 28208 {North Carolina}
+2301 University Dr, Bismarck, ND 58504 {North Dakota}
+4600 International Gateway, Columbus, OH 43219 {Ohio}
+7100 Terminal Dr, Oklahoma City, OK 73159 {Oklahoma}
+7000 NE Airport Way, Portland, OR 97218 {Oregon}
+8000 Essington Ave, Philadelphia, PA 19153 {Pennsylvania}
+2000 Post Rd, Warwick, RI 02886 {Rhode Island}
+5500 International Blvd, North Charleston, SC 29418 {South Carolina}
+3800 Airport Rd #209, Pierre, SD 57501 {South Dakota}
+1 Terminal Dr, Nashville, TN 37214 {Tennessee}
+2400 Aviation Dr, DFW Airport, TX 75261 {Texas}
+776 N Terminal Dr, Salt Lake City, UT 84122 {Utah}
+1979 Airport Rd, Barre, VT 05641 {Vermont}
+1 Richard E Byrd Terminal Dr, Richmond, VA 23250 {Virginia}
+17801 International Blvd, Seattle, WA 98158 {Washington}
+100 Airport Rd #175, Charleston, WV 25311 {West Virginia}
+4000 International Ln, Madison, WI 53704 {Wisconsin}
+4020 Airport Pkwy W, Cheyenne, WY 82001 {Wyoming}
+
+Get Alternative Addresses For:
+New Castle, DE 19720 {Delaware}
+Atlanta, GA 30320 {Georgia}
+Boise, ID 83705 {Idaho}
+O'Hare, Illinois, 60666, USA {Illinois}
+Indianapolis, IN 46241 {Indiana}
+Baltimore, MD 21240 {Maryland}
+St. Paul, MN 55111 {Minnesota}
+Jackson, MS 39208 {Mississippi}
+Las Vegas, NV 89119 {Nevada}
+Pierre, SD 57501 {South Dakota}
+DFW Airport, TX 75261 {Texas}
+1 Richard E Byrd Terminal Dr, Richmond, VA 23250 {Virginia}
+17801 International Blvd, Seattle, WA 98158 {Washington}
+100 Airport Rd #175, Charleston, WV 25311 {West Virginia}
+
+Find Distances of each airport relative to the origin of the picture:
+AirportCode,XDist,YDist,Hyp
+
+Find the distances between each airport and their outgoings:
+AipportCodeOrigin,AirportCodeDestination,Weight
+
+https://www.airmilescalculator.com/distance/bos-to-bwi/
+
+Count all unique airport values in the final_flights2.csv file and that will be the number of states that you will be counting from
+
+chosen to have outgoing flights also be incoming flights to make it an undirected graph problem
+
+10x10 Example:
+[0, 569, 868, 1055, 1217, 802, 1616, 641, 460, 985, ]
+[569, 0, 328, 486, 1670, 1118, 1111, 349, 718, 1553, ]
+[868, 328, 0, inf, inf, 1440, 1009, 602, 1044, inf, ]
+[1055, 486, 255, 0, inf, inf, inf, inf, inf, inf, ]
+[1217, 1670, 1999, inf, 0, inf, inf, inf, inf, 787, ]
+[802, 1118, 1440, inf, inf, 0, inf, inf, 403, 1005, ]
+[1616, inf, 1009, inf, inf, inf, 0, inf, inf, inf, ]
+[641, 349, 602, 628, 1491, inf, inf, 0, 533, inf, ]
+[460, inf, 1044, inf, inf, 403, inf, inf, 0, inf, ]
+[985, 1553, inf, inf, 787, inf, inf, inf, inf, 0, ]

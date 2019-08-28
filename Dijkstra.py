@@ -208,8 +208,9 @@ def setup(graphsize, cityobjs, source):
     for obj in cityobjs:
         print("hey")
 
+
 graph = Graph(9)
-graph.addEdge(0, 1, 4)
+graph.addEdge(0, 1, 18)
 graph.addEdge(0, 7, 8)
 graph.addEdge(1, 2, 8)
 graph.addEdge(1, 7, 11)
@@ -224,5 +225,6 @@ graph.addEdge(6, 7, 1)
 graph.addEdge(6, 8, 6)
 graph.addEdge(7, 8, 7)
 graph.dijkstra(0)
+
 
 # This code is contributed by Divyanshu Mehta
